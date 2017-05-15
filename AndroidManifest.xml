@@ -2,7 +2,7 @@
 <!--
      Copyright (C) 2013 The CyanogenMod Project
      Copyright (C) 2017 The LineageOS Project
-     Copyright (C) 2017 The MoKee Open Source Project
+     Copyright (C) 2017 The AIM ROM project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:androidprv="http://schemas.android.com/apk/prv/res/android"
-          package="com.mokee.setupwizard"
+          package="com.aim.setupwizard"
           android:versionCode="5"
           android:sharedUserId="android.uid.system">
 
@@ -39,26 +39,26 @@
     <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
     <uses-permission android:name="android.permission.MANAGE_USERS" />
     <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
-    <uses-permission android:name="mokee.permission.ACCESS_THEME_MANAGER"/>
+    <uses-permission android:name="aim.permission.ACCESS_THEME_MANAGER"/>
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
-    <uses-permission android:name="mokee.permission.HARDWARE_ABSTRACTION_ACCESS" />
+    <uses-permission android:name="aim.permission.HARDWARE_ABSTRACTION_ACCESS" />
     <uses-permission android:name="android.permission.BACKUP" />
-    <uses-permission android:name="mokee.permission.FINISH_SETUP" />
-    <uses-permission android:name="mokee.permission.LEGALESE" />
-    <uses-permission android:name="mokee.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="mokee.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="aim.permission.FINISH_SETUP" />
+    <uses-permission android:name="aim.permission.LEGALESE" />
+    <uses-permission android:name="aim.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="aim.permission.WRITE_SECURE_SETTINGS"/>
 
     <permission
-        android:name="mokee.permission.PROTECTED_APP"
+        android:name="aim.permission.PROTECTED_APP"
         android:protectionLevel="signatureOrSystem" />
 
     <permission
-        android:name="mokee.permission.FINISH_SETUP"
+        android:name="aim.permission.FINISH_SETUP"
         android:protectionLevel="signatureOrSystem"
         androidprv:allowViaWhitelist="true" />
 
-    <protected-broadcast android:name="com.mokee.setupwizard.SETUP_FINISHED"
-                         android:permission="mokee.permission.FINISH_SETUP"/>
+    <protected-broadcast android:name="com.aim.setupwizard.SETUP_FINISHED"
+                         android:permission="aim.permission.FINISH_SETUP"/>
 
     <application android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
@@ -107,7 +107,7 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_BLUETOOTH_SETUP" />
+                <action android:name="com.aim.setupwizard.LINEAGE_BLUETOOTH_SETUP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -119,7 +119,7 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_WELCOME" />
+                <action android:name="com.aim.setupwizard.LINEAGE_WELCOME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -131,7 +131,7 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_LOCALE" />
+                <action android:name="com.aim.setupwizard.LINEAGE_LOCALE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -143,7 +143,7 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_DATETIME" />
+                <action android:name="com.aim.setupwizard.LINEAGE_DATETIME" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -156,7 +156,7 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_WIFI_SETUP" />
+                <action android:name="com.aim.setupwizard.LINEAGE_WIFI_SETUP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -169,7 +169,7 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_CAPTIVE_PORTAL_SETUP" />
+                <action android:name="com.aim.setupwizard.LINEAGE_CAPTIVE_PORTAL_SETUP" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -182,7 +182,7 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_SIM_MISSING" />
+                <action android:name="com.aim.setupwizard.LINEAGE_SIM_MISSING" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -195,7 +195,7 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_CHOOSE_DATA_SIM" />
+                <action android:name="com.aim.setupwizard.LINEAGE_CHOOSE_DATA_SIM" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -208,7 +208,7 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_ENABLE_MOBILE_DATA" />
+                <action android:name="com.aim.setupwizard.LINEAGE_ENABLE_MOBILE_DATA" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -221,19 +221,19 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_LOCATION_SETTINGS" />
+                <action android:name="com.aim.setupwizard.LINEAGE_LOCATION_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".MoKeeSettingsActivity"
+        <activity android:name=".AimSettingsActivity"
                   android:label="@string/activity_label_empty"
                   android:excludeFromRecents="true"
                   android:configChanges="mcc|mnc"
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_SETTINGS" />
+                <action android:name="com.aim.setupwizard.LINEAGE_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -246,7 +246,7 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_FINGERPRINT_SETTINGS" />
+                <action android:name="com.aim.setupwizard.LINEAGE_FINGERPRINT_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -259,7 +259,7 @@
                   android:exported="false"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS" />
+                <action android:name="com.aim.setupwizard.LINEAGE_LOCKSCREEN_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -271,7 +271,7 @@
                   android:immersive="true"
                   android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.LINEAGE_SETUP_COMPLETE" />
+                <action android:name="com.aim.setupwizard.LINEAGE_SETUP_COMPLETE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -283,7 +283,7 @@
                   android:label="@@string/activity_label_empty"
                   android:theme="@style/NoDisplay">
             <intent-filter>
-                <action android:name="com.mokee.setupwizard.EXIT"/>
+                <action android:name="com.aim.setupwizard.EXIT"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>

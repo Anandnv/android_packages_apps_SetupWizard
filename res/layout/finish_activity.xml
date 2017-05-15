@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.mokee.setupwizard.widget.ScrimInsetsFrameLayout
+<com.aim.setupwizard.widget.ScrimInsetsFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root"
@@ -64,4 +64,4 @@
         android:layout_gravity="bottom"
         android:visibility="gone"/>
 
-</com.mokee.setupwizard.widget.ScrimInsetsFrameLayout>
+</com.aim.setupwizard.widget.ScrimInsetsFrameLayout>
